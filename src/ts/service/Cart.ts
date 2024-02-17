@@ -12,8 +12,7 @@ export default class Cart {
     }
 
     calculateTotalCost(): number {
-      const totalCost = this._items.reduce((total, item) => total + item.price, 0)
-      return totalCost;
+      return this. _items.reduce((total, this.item) => total + this.items.price, 0)
     }
 
     calculateTotalCostWithDiscount(discount: number): number {
@@ -22,6 +21,6 @@ export default class Cart {
     }
 
     removeItemById(id: number): void {
-      this._items = this._items.filter(item => item.id !== id);
+      this._items = this._items.filter((item: Buyable) => item.id !== id);
     }
 }
